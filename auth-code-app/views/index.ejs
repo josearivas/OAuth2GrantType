@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/semantic.min.css" />
+  </head>
+  <body>
+    <div id="custom-container" class="ui grid middle aligned">
+      <div class="row">
+        <div class="column">
+          <div class="ui text container">
+            <h1><%= title %></h1>
+            <p>
+              Service Provider registrado en el WSO2 IS. <br />
+              Autenticación: Básica
+            </p>
+
+            <div class="ui inverted">
+              <a
+                class="huge ui white button"
+                href="<%= auth_server_url %>?scope=openid&response_type=code&redirect_uri=<%= redirect_uri %>&client_id=<%= client_id %>"
+              >
+                Iniciar sesion
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

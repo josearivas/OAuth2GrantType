@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= data.title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/semantic.min.css" />
+  </head>
+  <body>
+    <div id="custom-container" class="ui grid middle aligned">
+      <div class="row">
+        <div class="column">
+          <div class="ui text container">
+            <h1><%= data.title %></h1>
+            <p>Bienvenido. Inicio de sesion exitoso!</p>
+            <p>Informacion de usuario:</p>
+
+            <div class="ui list">
+              <div class="item">
+                <div class="header" style="color: white">Nombre de Usuario</div>
+                <%= data.userInfo.username %>
+              </div>
+              <div class="item">
+                <div class="header" style="color: white">Email</div>
+                <%= data.userInfo.email %>
+              </div>
+              <div class="item">
+                <div class="header" style="color: white">Pais</div>
+                <%= data.userInfo.country %>
+              </div>
+            </div>
+
+            <br />
+            <div class="ui inverted">
+              <a
+                class="huge ui white button"
+                href="https://localhost:9443/oauth2/authorize?scope=openid&response_type=id_token%20token&redirect_uri=http://localhost:3000/home&client_id=vscwF0B_5tGnibaD2XymPMZZoica&nonce=abc"
+              >
+                Cerrar sesion
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

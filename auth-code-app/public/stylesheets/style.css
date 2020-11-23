@@ -1,0 +1,17 @@
+#custom-container {
+  background-color: #040536;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  /* text-align: center; */
+}
+
+h1 {
+  font-size: 38px;
+}
+
+p {
+  font-size: 22px;
+}
